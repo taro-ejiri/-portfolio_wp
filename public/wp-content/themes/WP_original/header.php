@@ -16,17 +16,17 @@ if(is_front_page()): ?>
 <meta name="keywords" content="web制作,webデザイナー,コーダー,東京,板橋区,">
 <meta name="description" content="taro ejiriのポートフォリオサイトです。これまで制作してきたWEBサイトについて、また制作する際の概要についてご紹介いたします。">
 <meta name="author" content="taro ejiri">
-<link rel="canonical" href="http://sept11.wp.xdomain.jp/">
+<link rel="canonical" href="https://et-design.main.jp/">
 <!-- OGP -->
 <meta property="og:site_name" content="ET ウェブデザイン portfolio">
 <meta property="og:title" content=""><!-- ogpのタイトル. <title>と文章も文字数も同じにする。 -->
 <meta property="og:description" content="ejiriのポートフォリオサイトです。これまで制作してきたWEBサイトについて、また制作する際の概要についてご紹介いたします。">
 <meta property="og:type" content="website">
-<meta property="og:url" content="http://sept11.wp.xdomain.jp/">
+<meta property="og:url" content="https://et-design.main.jp/">
 <meta property="og:image" content=""><!-- ogpのURL貼る -->
 <meta property="fb:app_id" content="" /><!-- App-ID（15文字の半角数字） -->
 <meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="http://sept11.wp.xdomain.jp/">
+<meta name="twitter:site" content="https://et-design.main.jp/">
 <meta name="twitter:image" content=""><!-- ogpのURL貼る -->
 <!-- favicon -->
 <link rel="icon" type="image/x-icon" href="<?php bloginfo('template_url'); ?>/img/favicon.ico">
@@ -57,8 +57,8 @@ if(is_front_page()): ?>
 	"@context": "http://schema.org",
 	"@type": "Organization",
 	"name": "TARO EJIRI",
-	"url": "http://sept11.wp.xdomain.jp/",
-	"logo": "http://sept11.wp.xdomain.jp/img/ogp_top.png"
+	"url": "https://et-design.main.jp/",
+	"logo": "https://et-design.main.jp/img/ogp_top.png"
   }
 </script>
 <?php wp_head(); ?>
@@ -98,9 +98,15 @@ if(is_front_page()): ?>
 							<!-- <li><a href="#">blog</a></li> -->
 							<li>
 								<ul class="h_share_btn">
-									<li><a href="https://twitter.com/sept11_1976"><img src="<?php bloginfo('template_url'); ?>/img/sns/twitter_out.png" alt="twitter" width="50"></a></li>
+									<!--li><a href="https://twitter.com/sept11_1976"><img src="<?php bloginfo('template_url'); ?>/img/sns/twitter_out.png" alt="twitter" width="50"></a></li>
 									<li><a href="https://www.facebook.com/sept.eleven.jpn" ><img src="<?php bloginfo('template_url'); ?>/img/sns/fb_out.png" alt="facebook" width="50"></a></li>
-									<li><a href="https://github.com/taro-ejiri/portfolio.local" ><img src="<?php bloginfo('template_url'); ?>/img/sns/github_out.png" alt="github" width="50"></a></li>
+									<li><a href="https://github.com/taro-ejiri/portfolio_wp" ><img src="<?php bloginfo('template_url'); ?>/img/sns/github_out.png" alt="github" width="50"></a></li>
+									<li><a href="<?php bloginfo('url'); ?>" ><img src="<?php bloginfo('template_url'); ?>/img/sns/line_out.png" alt="LINE" width="50"></a></li-->
+									<!--li><a href="<?php bloginfo('url'); ?>" ><img src="<?php bloginfo('template_url'); ?>/img/sns/instagram_out.png" alt="instagram" width="50"></a></li-->
+
+									<li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/sns/twitter_out.png" alt="twitter" width="50"></a></li>
+									<li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/sns/fb_out.png" alt="facebook" width="50"></a></li>
+									<li><a href=""><img src="<?php bloginfo('template_url'); ?>/img/sns/github_out.png" alt="github" width="50"></a></li>
 									<li><a href="<?php bloginfo('url'); ?>" ><img src="<?php bloginfo('template_url'); ?>/img/sns/line_out.png" alt="LINE" width="50"></a></li>
 									<!--li><a href="<?php bloginfo('url'); ?>" ><img src="<?php bloginfo('template_url'); ?>/img/sns/instagram_out.png" alt="instagram" width="50"></a></li-->
 								</ul>
