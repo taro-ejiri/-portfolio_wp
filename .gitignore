@@ -1,0 +1,18 @@
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local限定　更新不要
+/sql
+
+# Wordpress 更新不要
+/public/*
+!/public/wp-config.php
+!/public/wp-content
+/public/wp-content/*
+
+!/public/wp-content/themes
+/public/wp-content/themes/*
+!/public/wp-content/themes/WP_original
+# Gulpモジュール 更新不要
+/public/wp-content/themes/WP_original/node_modules
