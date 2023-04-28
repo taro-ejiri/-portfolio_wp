@@ -17,12 +17,11 @@ WordPress
 - SASS(SCSS)
   ※VSCode でコンパイル
 - jQuery
-- Vue.js(現状は CDN)
+- Vue.js(CDN)
 
 ### 【 ビルドツール 】
 
 - gulp（コンパイルは VSCode で行う様変更したのでスプライト画像作成や画像圧縮の際に使用）
-- Webpack（JS ビルド）※予定
 
 ## 環境設定
 
