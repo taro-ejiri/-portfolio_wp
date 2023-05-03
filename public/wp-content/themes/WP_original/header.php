@@ -28,18 +28,22 @@ if(is_front_page()): ?>
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="https://et-design.main.jp/">
 <meta name="twitter:image" content="">
+
 <!-- favicon -->
 <link rel="icon" type="image/x-icon" href="<?php bloginfo('template_url'); ?>/img/favicon.ico">
+
 <!-- font-awesome -->
 <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
 <!-- style.css-->
 <link href="<?php bloginfo('template_url'); ?>/css/style.css" rel="stylesheet" type="text/css">
-<?php if ( is_front_page() || is_singular('works') ) : ?>
+
 <!-- slick -->
+<?php if ( is_front_page() || is_singular('works') ) : ?>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/js/slick/slick.css" >
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/js/slick/slick-theme.css">
 <?php endif; ?>
-<?php if(is_front_page()): ?><?php endif; ?>
+
 <!--[if lt IE 9]>
 <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5shiv.min.js"></script>
 <![endif]-->
