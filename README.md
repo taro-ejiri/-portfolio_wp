@@ -17,7 +17,7 @@ WordPress
 ### 【 言語、フレームワーク等 】
 
 - SASS(SCSS)
-  ※VSCode でコンパイル
+  ※VSCode【Live Sass Compiler】でコンパイル
 - jQuery
 - Vue.js(CDN)
 
