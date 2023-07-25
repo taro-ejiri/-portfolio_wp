@@ -274,6 +274,12 @@ function remove_migrate($scripts){
 }
 add_filter('wp_default_scripts','remove_migrate');
 
+//  ルート証明書の検証を行わない様にする。
+//  プラグインの更新ができないので
+add_action('http_api_curl', function( $handle ){
+  curl_setopt($handle, CURLOPT_SSL_VERIFYPEER, false);
+}, 10);
+
 /**
  * 余分なものを読み込まないようにするCSSを設定する
  */
