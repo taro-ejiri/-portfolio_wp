@@ -2,42 +2,42 @@
 3.0 Layout
 ----------------------------------------------------------------*/
 .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    @include max-screen($breakpoint-tablet) {
-        //font-size: 18px;
-    }
-    @include max-screen($breakpoint-mobile) {
-        //font-size: 16px;
-    }
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @include max-screen($breakpoint-tablet) {
+    //font-size: 18px;
+  }
+  @include max-screen($breakpoint-mobile) {
+    //font-size: 16px;
+  }
 }
 @media (min-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
+  .container {
+    max-width: 540px;
+  }
 }
 @media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
+  .container {
+    max-width: 720px;
+  }
 }
 @media (min-width: 992px) {
-    .container {
-        max-width: 970px;
-    }
+  .container {
+    max-width: 970px;
+  }
 }
 @media (min-width: 1200px) {
-    .container {
-        max-width: 1170px;
-    }
+  .container {
+    max-width: 1170px;
+  }
 }
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 @import "_header.scss";
