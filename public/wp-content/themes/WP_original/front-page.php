@@ -62,6 +62,7 @@
       <p>これまでコーポレートサイト、キャンペーンページの制作に携わってまいりました。今ではレスポンシブ対応が必須であり、最近携わったサイトは全てレスポンシブ対応しております。<br>SNSとの連動、GAでのサイト閲覧者の把握、それに伴ったSEO対策、改修など、サイト制作するにあたりこれらを義務付けし、顧客獲得に取り組みたいと考えております。</p>
     </div>
     <ul class="slider front-slick">
+      <li><a href="/works/nanboya/"><img src="<?php bloginfo('template_url'); ?>/img/works/nanboya.jpg" alt="バリュエンスジャパン株式会社"></a></li>
       <li><a href="/works/sompo-park/"><img src="<?php bloginfo('template_url'); ?>/img/works/SOMPOPark.webp" alt="損害保険ジャパン株式会社様"></a></li>
       <li><a href="/works/sega/"><img src="<?php bloginfo('template_url'); ?>/img/works/online.webp" alt="株式会社セガ様"></a></li>
       <li><a href="/works/selfu/"><img src="<?php bloginfo('template_url'); ?>/img/works/selfu.webp" alt="株式会社Showcase Gig"></a></li>
