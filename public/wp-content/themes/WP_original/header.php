@@ -31,18 +31,18 @@ if (is_front_page()) : ?>
   <meta name="twitter:image" content="">
 
   <!-- favicon -->
-  <link rel="icon" type="image/x-icon" href="<?php bloginfo('template_url'); ?>/img/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="<?php bloginfo('template_url'); ?>/assets/img/favicon.ico">
 
   <!-- font-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
   <!-- style.css-->
-  <link href="<?php bloginfo('template_url'); ?>/css/style.min.css" rel="stylesheet" type="text/css">
+  <link href="<?php bloginfo('template_url'); ?>/assets/css/style.min.css" rel="stylesheet" type="text/css">
 
   <!-- slick -->
   <?php if (is_front_page() || is_singular('works')) : ?>
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/js/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/js/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/assets/js/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/assets/js/slick/slick-theme.css">
   <?php endif; ?>
 
   <!--[if lt IE 9]>
@@ -77,10 +77,10 @@ if (is_front_page()) : ?>
     <div class="header-content">
       <h1>
         <div class="logo_pc">
-          <a href="<?php bloginfo('url'); ?>/"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="<?php bloginfo('name'); ?>"></a>
+          <a href="<?php bloginfo('url'); ?>/"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo.png" alt="<?php bloginfo('name'); ?>"></a>
         </div>
         <div class="logo_sm">
-          <a href="<?php bloginfo('url'); ?>/"><img src="<?php bloginfo('template_url'); ?>/img/miniLogo.png" alt="<?php bloginfo('name'); ?>"></a>
+          <a href="<?php bloginfo('url'); ?>/"><img src="<?php bloginfo('template_url'); ?>/assets/img/miniLogo.png" alt="<?php bloginfo('name'); ?>"></a>
         </div>
       </h1>
       <nav>
@@ -107,7 +107,7 @@ if (is_front_page()) : ?>
               <!-- <li><a href="#">blog</a></li> -->
               <li>
                 <ul class="h_share_btn">
-                  <li><a href="https://github.com/taro-ejiri/portfolio_wp" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/sns/github_out.png" alt="github" width="50"></a></li>
+                  <li><a href="https://github.com/taro-ejiri/portfolio_wp" target="_blank"><img src="<?php bloginfo('template_url'); ?>/assets/img/sns/github_out.png" alt="github" width="50"></a></li>
                 </ul>
               </li>
             </ul>

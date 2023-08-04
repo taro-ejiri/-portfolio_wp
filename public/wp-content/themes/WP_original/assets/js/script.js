@@ -41,7 +41,7 @@ $(function() {
 	var pageTopBtn = $('.pageTop');	
 	pageTopBtn.hide();
 	$(window).scroll(function () {
-		if ($(this).scrollTop() > 100) {
+		if ($(this).scrollTop() > 150) {
 			pageTopBtn.fadeIn();
 		} else {
 			pageTopBtn.fadeOut();
