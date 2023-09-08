@@ -744,7 +744,7 @@ nav .size_sm .menu {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: #FFF;
+  background-color: #fff;
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s ease-out;
@@ -798,7 +798,7 @@ nav .size_sm .menu ul li ul.h_share_btn li:hover, nav .size_sm .menu ul li ul.h_
 .pageTop a {
   display: block;
   opacity: 0.9;
-  background: #A9A9B1;
+  background: #a9a9b1;
   text-align: center;
   font-size: 10px;
   letter-spacing: 0.1em;
@@ -1384,16 +1384,19 @@ footer .cp_right {
 
 /* 3.7.2 CODING POLICY / SMART PHONE
 ------------------------------*/
-.Policy, .smartphone {
+.Policy,
+.smartphone {
   padding: 0 0 70px;
 }
 @media only screen and (max-width: 768px) {
-  .Policy, .smartphone {
+  .Policy,
+  .smartphone {
     padding: 0 0 35px;
   }
 }
 @media only screen and (max-width: 480px) {
-  .Policy, .smartphone {
+  .Policy,
+  .smartphone {
     padding: 10px 0;
   }
 }
@@ -2038,7 +2041,8 @@ span.wpcf7-not-valid-tip,
   opacity: 1;
   transform: scale(1);
 }
-.work-list figure:hover .title, .work-list figure:hover p {
+.work-list figure:hover .title,
+.work-list figure:hover p {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
