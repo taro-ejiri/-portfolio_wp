@@ -1,0 +1,81 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+	// font-size: 14px;
+	font-size: 62.5%;
+}
+body {
+	margin: 0;
+	line-height: $base_line_height;
+	font-family: $font_gothic_sp;
+	font-size: 1.4rem;
+	@include mq($md) {
+		font-family: $font_gothic;
+	}
+}
+a {
+	color: $brand_base_color;
+	text-decoration: none;
+}
+a:hover, a:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+@viewport { width: device-width;}
+@-o-viewport { width: device-width;}
+@-ms-viewport { width: device-width;}
+@-moz-viewport { width: device-width;}
+@-webkit-viewport { width: device-width;}
+
+h1 {
+	font-family: $font_mincho;
+	font-size: $font_size_h1;
+	line-height: 1.3;
+	margin: 0
+}
+h2 {
+	font-family: $font_mincho;
+	font-size: $font_size_h2;
+	line-height: 1.3;
+	margin: 0;
+}
+h3 {
+	font-family: $font_mincho;
+	font-size: $font_size_h3;
+	line-height: 1.3;
+	margin: 0;
+}
+h4 {
+	font-family: $font_mincho;
+	font-size: $font_size_h4;
+	line-height: 1.3;
+	margin: 0;
+}
+h5,
+h6 {
+	font-family: $font_mincho;
+	line-height: 1.3;
+	margin: 0;
+}
+h5 {
+	font-size: $font_size_h5;
+}
+h6 {
+	font-size: $font_size_h6;
+}
+p {
+	margin: 0 0 8px;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+ol,ul {
+	margin-top: 0;
+	margin-bottom: 8px;
+}

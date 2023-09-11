@@ -1,0 +1,91 @@
+// ==============
+// breakpoint
+// ==============
+
+// モバイルファースト
+@mixin mq($px: $md) {
+  @media screen and (min-width: $px) {
+    @content;
+  }
+}
+
+@mixin only_mq($px: $md) {
+  @media screen and (max-width: ($px - 1px)) {
+    @content;
+  }
+}
+
+// ==============
+// サイズ調整
+// ==============
+
+// width, heightを vwで指定
+@mixin vw($width: false, $height: false, $base: $base_nby_sp_width_num) {
+  @if $width != false {
+    width: ($width / $base) * 100vw;
+  }
+  @if $height != false {
+    height: ($height / $base) * 100vw;
+  }
+}
+
+// width, heightを pxで指定
+@mixin wh_px($width: false, $height: false, $base: $base_sp_ratio) {
+  @if $width != false {
+    width: round(($width / 2) * $base) * 1px;
+  }
+  @if $height != false {
+    height: round(($height / 2) * $base) * 1px;
+  }
+}
+
+// background-size を pxで指定
+@mixin bg_size_px($width: false, $height: false, $base: $base_sp_ratio) {
+  @if $width != false and $height != false {
+    background-size: round(($width / 2) * $base) * 1px round(($height / 2) * $base) * 1px;
+  }
+  @else if $width != false {
+    background-size: round(($width / 2) * $base) * 1px auto;
+  }
+  @else if $height != false {
+    background-size: auto round(($height / 2) * $base) * 1px;
+  }
+}
+
+// max-width, max-heightを pxで指定
+@mixin max_wh_px($width: false, $height: false, $base: $base_sp_ratio) {
+  @if $width != false {
+    max-width: round(($width / 2) * $base) * 1px;
+  }
+  @if $height != false {
+    max-height: round(($height / 2) * $base) * 1px;
+  }
+}
+
+// min-width, min-heightを pxで指定
+@mixin min_wh_px($width: false, $height: false, $base: $base_sp_ratio) {
+  @if $width != false {
+    min-width: round(($width / 2) * $base) * 1px;
+  }
+  @if $height != false {
+    min-height: round(($height / 2) * $base) * 1px;
+  }
+}
+
+// 既存サイトを基準にフォントサイズを pxで指定
+@mixin fs_sp_px($px) {
+  font-size: round(($px / 2) * $base_sp_ratio) * 1px;
+}
+
+// 既存サイトを基準にフォントサイズを remで指定
+@mixin fs_sp($px) {
+  font-size: round(($px / 2) * $base_sp_ratio) * 0.1rem;
+}
+
+// ==============
+// 共通
+// ==============
+@mixin list_style_none {
+  list-style: none;
+  padding-left: 0;
+}

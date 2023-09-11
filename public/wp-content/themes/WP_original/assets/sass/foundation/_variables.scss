@@ -1,0 +1,403 @@
+// custom variables
+$base_sp_width_num: 768;
+$base_nby_sp_width_num: 640;
+$base_sp_ratio: ($base_sp_width_num / $base_nby_sp_width_num);
+
+// colors
+/* white */
+$white: #fff;
+$white_mostly: #f1f1f1;
+$white_smoke: #ebebeb;
+
+/* black */
+$black: #000;
+$black-100: #e5e5e5;
+$black-200: #cccccc;
+$black-300: #b2b2b2;
+$black-400: #999999;
+$black-500: #808080;
+$black-600: #666666;
+$black-700: #4c4c4c;
+$black-800: #333333;
+$black-900: #191919;
+
+/* gray */
+$gray: #8b9090;
+$gray-100: #e5e6e6;
+$gray-200: #cacccc;
+$gray-300: #b3b5b5;
+$gray-400: #9ea1a1;
+$gray-500: #8b8f8f;
+$gray-600: #797e7e;
+$gray-700: #696e6e;
+$gray-800: #5b6060;
+$gray-900: #454949;
+
+$gray_dark: $black-800;
+$gray_charcoal: #444;
+$dimgray: #616161;
+$gray_light: #a5a5a5;
+$silver: #ccc;
+
+/* cyan */
+$cyan: #05bfd8;
+$cyan-100: #cdf2f7;
+$cyan-200: #b4ecf3;
+$cyan-300: #7ae1f7;
+$cyan-300: #7ae1f7;
+$cyan-400: #66d9f4;
+$cyan-500: #60cee9;
+$cyan-600: #56bbd4;
+$cyan-700: #4da8be;
+$cyan-800: #3e899a;
+$cyan-900: #316f7d;
+
+/* aqua */
+$aqua: #5ce5de;
+$aqua-100: #defaf8;
+$aqua-200: #ccf4f1;
+$aqua-300: #a1eae6;
+$aqua-400: #82e1dc;
+$aqua-500: #6cd9d2;
+$aqua-600: #5abab4;
+$aqua-700: #4a9b95;
+$aqua-800: #3d807c;
+$aqua-900: #326b68;
+
+/* teal */
+$teal: #009999;
+$teal-100: #e5f5f5;
+$teal-200: #b2e0e0;
+$teal-300: #5cc7c8;
+$teal-400: #53b5b7;
+$teal-500: #009999;
+$teal-600: #357a7b;
+$teal-700: #2f6e6f;
+$teal-800: #255a5a;
+$teal-900: #1c4747;
+
+/* dark_green */
+$dark_green: #008f49;
+$dark_green-100: #cce9db;
+$dark_green-200: #008f49;
+$dark_green-300: #66bc92;
+$dark_green-400: #33a56d;
+$dark_green-500: #008f49;
+$dark_green-600: #337543;
+$dark_green-700: #296138;
+$dark_green-800: #21512e;
+$dark_green-900: #1a4326;
+
+/* green */
+$light_green: #07dd49;
+$light_green-100: #e6fced;
+$light_green-200: #cdf8db;
+$light_green-300: #9cf1b6;
+$light_green-400: #51e780;
+$light_green-500: #07dd49;
+$light_green-600: #53b34e;
+$light_green-700: #449541;
+$light_green-800: #377c35;
+$light_green-900: #245625;
+
+$green: #00a300;
+$green_dark: #0c8c0c;
+
+/* lime */
+$lime: #75fb4c;
+$lime-100: #ebfde2;
+$lime-200: #d1fbbc;
+$lime-300: #bbfa9a;
+$lime-400: #a8f87f;
+$lime-500: #82f64f;
+$lime-600: #6fd942;
+$lime-700: #5cb335;
+$lime-800: #4c952b;
+$lime-900: #3e7c22;
+
+/* blue */
+$blue: #0000f5;
+$blue-100: #e5e5fe;
+$blue-200: #b2b2fc;
+$blue-300: #8080fa;
+$blue-400: #5151f5;
+$blue-500: #2020f4;
+$blue-600: #0000ea;
+$blue-700: #0000c2;
+$blue-800: #0000a0;
+$blue-900: #00006e;
+
+$blue_white: #f8fdff;
+$blue_dark: #288b8e;
+
+
+/* navy */
+$navy: #003e71;
+$navy-100: #e5ecf1;
+$navy-200: #b2c5d4;
+$navy-300: #668baa;
+$navy-400: #2961ad;
+$navy-500: #225494;
+$navy-600: #1c4880;
+$navy-700: #12325b;
+$navy-800: #0d294b;
+$navy-900: #071c34;
+
+/* indigo */
+$indigo: #6600ff;
+$indigo-100: #f0e5ff;
+$indigo-200: #d1b2ff;
+$indigo-300: #bb9af7;
+$indigo-400: #9461f5;
+$indigo-500: #7631f4;
+$indigo-600: #5d0ef4;
+$indigo-700: #4d0acb;
+$indigo-800: #4007a8;
+$indigo-900: #2c0374;
+
+/* purple */
+$purple: #660099;
+$purple-100: #e0cceb;
+$purple-200: #d1b2e0;
+$purple-300: #b280cc;
+$purple-400: #a430f5;
+$purple-500: #7f17c8;
+$purple-600: #6d12ab;
+$purple-700: #5d0e92;
+$purple-800: #4d0a7a;
+$purple-900: #350553;
+
+/* fuchsia */
+$fuchsia: #ea33f7;
+$fuchsia-100: #f6e0fb;
+$fuchsia-200: #f9c2fd;
+$fuchsia-300: #e7a0f5;
+$fuchsia-400: #dd6df1;
+$fuchsia-500: #d645ee;
+$fuchsia-600: #cc2ee5;
+$fuchsia-700: #a925be;
+$fuchsia-800: #8c1d9d;
+$fuchsia-900: #61126d;
+
+/* pink */
+$pink: #d63384;
+$pink-100: #d63384;
+$pink-200: #f3c2da;
+$pink-300: #e685b5;
+$pink-400: #e270a9;
+$pink-500: #da4790;
+$pink-600: #c44281;
+$pink-700: #a7336c;
+$pink-800: #74234b;
+$pink-900: #501833;
+
+/* burgundy */
+$burgundy: #8c1a35;
+$burgundy-100: #e8d1d7;
+$burgundy-200: #dcbac2;
+$burgundy-300: #d9879b;
+$burgundy-400: #cf5f79;
+$burgundy-500: #af344b;
+$burgundy-600: #962c40;
+$burgundy-700: #802537;
+$burgundy-800: #6a1f2d;
+$burgundy-900: #581926;
+
+/* red */
+$red: #dc3543;
+$red-100: #f8d7d9;
+$red-200: #f4c2c7;
+$red-300: #dd8f94;
+$red-400: #d2656b;
+$red-500: #ca4449;
+$red-600: #b03235;
+$red-700: #92292c;
+$red-800: #7a2124;
+$red-900: #651b1e;
+$red_dark: #964c4c;
+
+/* orange */
+$orange: #f66b24;
+$orange-100: #f66b24;
+$orange-200: #f6d9c8;
+$orange-300: #eeb08d;
+$orange-400: #e88f5e;
+$orange-500: #e4733a;
+$orange-600: #d05c28;
+$orange-700: #ac4c20;
+$orange-800: #8e3f1a;
+$orange-900: #773314;
+$orange_dark: #964e04;
+
+/* maroon */
+$maroon: #75140c;
+$maroon-100: #d6b8b6;
+$maroon-200: #ba8985;
+$maroon-300: #9e5a55;
+$maroon-400: #91433d;
+$maroon-500: #832b24;
+$maroon-600: #7e2318;
+$maroon-700: #6b1e14;
+$maroon-800: #591810;
+$maroon-900: #3d110a;
+
+/* brown */
+$brown: #894518;
+$brown-100: #e7dad1;
+$brown-200: #c4a28b;
+$brown-300: #ac7d5d;
+$brown-400: #a16a46;
+$brown-500: #95582f;
+$brown-600: #804923;
+$brown-700: #6b3c1d;
+$brown-800: #593118;
+$brown-900: #4a2914;
+
+/* taupe */
+$taupe: #5b4a3c;
+$taupe-100: #dedbd8;
+$taupe-200: #bdb7b1;
+$taupe-300: #ada49d;
+$taupe-400: #9d928a;
+$taupe-500: #8c7863;
+$taupe-600: #786755;
+$taupe-700: #675848;
+$taupe-800: #4a3e33;
+$taupe-900: #3d332b;
+
+/* bronze */
+$bronze: #706144;
+$bronze-100: #e2dfda;
+$bronze-200: #c6c0b4;
+$bronze-300: #b7b0a1;
+$bronze-400: #9b907c;
+$bronze-500: #958463;
+$bronze-600: #807254;
+$bronze-700: #6e6248;
+$bronze-800: #5b513b;
+$bronze-900: #3f3828;
+
+/* olive */
+$olive: #808026;
+$olive-100: #e6e6d4;
+$olive-200: #dddd96;
+$olive-300: #c7c75a;
+$olive-400: #afaf4a;
+$olive-500: #95953f;
+$olive-600: #808036;
+$olive-700: #6a6a2d;
+$olive-800: #585825;
+$olive-900: #49491e;
+
+/* gold */
+$gold: #c09b35;
+$gold-100: #f9f5eb;
+$gold-200: #ece1c2;
+$gold-300: #e2d4a8;
+$gold-400: #d5bf80;
+$gold-500: #b99b48;
+$gold-600: #99813c;
+$gold-700: #806c32;
+$gold-800: #6b5a29;
+$gold-900: #584b22;
+
+/* yellow */
+$yellow: #fcd203;
+$yellow-100: #fdf8e2;
+$yellow-200: #faeda4;
+$yellow-300: #f8e375;
+$yellow-400: #f6da56;
+$yellow-500: #f4d348;
+$yellow-600: #caae3a;
+$yellow-700: #a7902f;
+$yellow-800: #8b7925;
+$yellow-900: #75651e;
+
+$yellow_white: #fdfceb;
+$yellow_light: #d3c78a;
+
+/* lemon */
+$lemon: #f6f400;
+$lemon-100: #fefee5;
+$lemon-200: #fdfdcc;
+$lemon-300: #fffd99;
+$lemon-400: #fffc5a;
+$lemon-500: #f5f350;
+$lemon-600: #cbca41;
+$lemon-700: #a8a735;
+$lemon-800: #8b8a2a;
+$lemon-900: #747321;
+
+/* beige */
+$beige: #d0b58e;
+$beige-100: #f6f0e8;
+$beige-200: #ece1d2;
+$beige-300: #ddd1ba;
+$beige-400: #d0b58e;
+$beige-500: #cbb592;
+$beige-600: #b8996b;
+$beige-700: #a48250;
+$beige-800: #886c42;
+$beige-900: #725a37;
+
+
+
+// ブランドカラー
+$brand_base_color: #7ac0ce;
+$brand_dark_color: #0f3c6b;
+$brand_vivid_color: #2aa8c1;
+$brand_sky_color: #95cdd8;
+$brand_aqua_color: #ccedf4;
+$brand_light_color: #e9f7fa;
+$tokei_base_color: $gray_charcoal;
+$gold_base_color: #c8a426;
+$gold_dark_color: #7d6c4a;
+
+$button_bg_orange: $orange;
+$button_bg_orange_gradient: #ff9600;
+$button_bg_green: $green;
+$button_bg_green_gradient: #00b900;
+$button_bg_blue: #3ab6ba;
+$button_bg_blue_gradient: #34d1d6;
+$button_bg_red: #c85f60;
+$button_bg_red_gradient: #ec7979;
+$button_bg_white: $white_mostly;
+$button_bg_white_gradient: #f3f3f3;
+$button_cta_blue: #2dcad0;
+
+// ヘッダー用カラー
+$header_menu_bg_color: #3e8493;
+
+// サイドバー用カラー
+$side_text_blue: #6f8dc7;
+$side_bg_blue: #9dbde9;
+$side_bg_blue_light: #cdeff6;
+
+// Scaffolding
+$text_color: $gray_charcoal;
+
+// Typography
+$base_line_height: 1.5;
+$font_mincho: "游明朝体", "Yu Mincho", "ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
+$font_gothic: "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+$font_gothic_sp: "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+$font_only_en: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font_Kumbh_Noto: "Kumbh Sans", "Noto Sans JP", "MS PGothic", "Arial", "Hiragino Kaku Gothic ProN", sans-serif;
+$font_only_Kumbh: "Kumbh Sans", sans-serif;
+$font_only_Noto: "Noto Sans JP", sans-serif;
+$font_size_h1: 3rem; // 30px
+$font_size_h2: 2.4rem; // 24px
+$font_size_h3: 2rem; // 20px
+$font_size_h4: 1.8rem; // 18px
+$font_size_h5: 1.6rem; // 16px
+$font_size_h6: 1.4rem; // 14px
+
+// Iconography
+// $icon_font_path: "../fonts/";
+
+// Media queries breakpoints
+$xs: 0;
+$sm: 480px;
+$md: 768px;
+$lg: 993px;
+$xl: 1231px;

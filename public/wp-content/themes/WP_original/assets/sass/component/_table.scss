@@ -1,0 +1,65 @@
+.c-priceTable {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+
+  &+& {
+    margin-top: 16px;
+  }
+}
+
+.c-priceTable__wrap {
+  margin-bottom: 32px;
+}
+
+.c-priceTable--general {
+  @extend .c-priceTable;
+  --table-border: #{$gray};
+}
+
+.c-priceTable__th {
+  color: var(--th-cl);
+  background-color: var(--th-bg);
+  border: 1px solid var(--table-border, var(--th-cl));
+  @include fs_sp(30);
+  padding: 8px 4px;
+  width: 20%;
+
+  @include mq {
+    font-size: 1.6rem;
+  }
+}
+
+.c-priceTable__td {
+  border: 1px solid var(--table-border, var(--th-cl));
+  color: var(--td-cl);
+  font-weight: bold;
+  padding: 4px;
+  width: 30%;
+  @include fs_sp(30);
+
+  @include mq {
+    font-size: 2.4rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+.c-priceTable__diff {
+  color: var(--diff-cl, #{$red});
+}
+
+.c-priceTable__small {
+  font-size: 0.7em;
+}
+
+.c-priceTable__attention {
+  @include fs_sp(22);
+  margin-top: 16px;
+
+  @include mq {
+    font-size: 1.6rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}

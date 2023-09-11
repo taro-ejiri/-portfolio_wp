@@ -1,0 +1,237 @@
+// ネガティブマージン
+$negaNum: -2;
+@while $negaNum >= -20 {
+  .u-mx#{$negaNum} {
+    margin-left: $negaNum+px;
+    margin-right: $negaNum+px;
+  }
+  .u-mx#{$negaNum}Sp {
+    @include only_mq($md) {
+      margin-left: $negaNum+px;
+      margin-right: $negaNum+px;
+    }
+  }
+  .u-mx#{$negaNum}Pc {
+    @include mq($md) {
+      margin-left: $negaNum+px;
+      margin-right: $negaNum+px;
+    }
+  }
+  $negaNum: $negaNum - 2;
+}
+// マージン 0指定
+// margin-top
+.u-mt0 {
+    margin-top: 0;
+}
+.u-mt0Sp {
+  @include only_mq($md) {
+    margin-top: 0;
+  }
+}
+.u-mt0Pc {
+  @include mq($md) {
+    margin-top: 0;
+  }
+}
+
+// margin-bottom
+.u-mb0 {
+  margin-bottom: 0;
+}
+.u-mb0Sp {
+  @include only_mq($md) {
+    margin-bottom: 0;
+  }
+}
+.u-mb0Pc {
+  @include mq($md) {
+    margin-bottom: 0;
+  }
+}
+
+// margin-left
+.u-ml0 {
+    margin-left: 0;
+}
+.u-ml0Sp {
+  @include only_mq($md) {
+    margin-left: 0;
+  }
+}
+.u-ml0Pc {
+  @include mq($md) {
+    margin-left: 0;
+  }
+}
+
+// margin-right
+.u-mr0 {
+  margin-right: 0;
+}
+.u-mr0Sp {
+  @include only_mq($md) {
+    margin-right: 0;
+  }
+}
+.u-mr0Pc {
+  @include mq($md) {
+    margin-right: 0;
+  }
+}
+
+// margin top and bottom
+.u-my0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.u-my0Sp {
+  @include only_mq($md) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+.u-my0Pc {
+  @include mq($md) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+// margin left and right
+.u-mx0 {
+  margin-left: 0;
+  margin-right: 0;
+}
+.u-mx0Sp {
+  @include only_mq($md) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.u-mx0Pc {
+  @include mq($md) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+
+// padding 0指定
+
+// padding-top
+.u-pt0 {
+    padding-top: 0;
+}
+.u-pt0Sp {
+  @include only_mq($md) {
+    padding-top: 0;
+  }
+}
+.u-pt0Pc {
+  @include mq($md) {
+    padding-top: 0;
+  }
+}
+// padding-bottom
+.u-pb0 {
+  padding-bottom: 0;
+}
+.u-pb0Sp {
+  @include only_mq($md) {
+    padding-bottom: 0;
+  }
+}
+.u-pb0Pc {
+  @include mq($md) {
+    padding-bottom: 0;
+  }
+}
+// padding-left
+.u-pl0 {
+    padding-left: 0;
+}
+.u-pl0Sp {
+  @include only_mq($md) {
+    padding-left: 0;
+  }
+}
+.u-pl0Pc {
+  @include mq($md) {
+    padding-left: 0;
+  }
+}
+// padding-right
+.u-pr0 {
+  padding-right: 0;
+}
+.u-pr0Sp {
+  @include only_mq($md) {
+    padding-right: 0;
+  }
+}
+.u-pr0Pc {
+  @include mq($md) {
+    padding-right: 0;
+  }
+}
+.u-pl0 {
+    padding-left: 0;
+}
+.u-pl0Sp {
+  @include only_mq($md) {
+    padding-left: 0;
+  }
+}
+.u-pl0Pc {
+  @include mq($md) {
+    padding-left: 0;
+  }
+}
+.u-pr0 {
+  padding-right: 0;
+}
+.u-pr0Sp {
+  @include only_mq($md) {
+    padding-right: 0;
+  }
+}
+.u-pr0Pc {
+  @include mq($md) {
+    padding-right: 0;
+  }
+}
+// margin top and bottom
+.u-py0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.u-py0Sp {
+  @include only_mq($md) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+.u-py0Pc {
+  @include mq($md) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+// margin left and right
+.u-px0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.u-px0Sp {
+  @include only_mq($md) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.u-px0Pc {
+  @include mq($md) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

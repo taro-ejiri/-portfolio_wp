@@ -1,0 +1,48 @@
+// alignment
+.u-textLeft {
+  text-align: left;
+}
+.u-textLeftSp {
+  @include only_mq($md) {
+    text-align: left;
+  }
+}
+.u-textLeftPc {
+  @include mq($md) {
+    text-align: left;
+  }
+}
+.u-textCenter {
+  text-align: center;
+}
+.u-textCenterSp {
+  @include only_mq($md) {
+    text-align: center;
+  }
+}
+.u-textCenterPc {
+  @include mq($md) {
+    text-align: center;
+  }
+}
+.u-textRight {
+  text-align: right;
+}
+.u-textRightSp {
+  @include only_mq($md) {
+    text-align: right;
+  }
+}
+.u-textRightPc {
+  @include mq($md) {
+    text-align: right;
+  }
+}
+
+.u-listUnstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.u-textBold{
+  font-weight: bold;
+}

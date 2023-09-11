@@ -1,0 +1,52 @@
+.p-aboutText {
+    @extend .c-section;
+  }
+  
+  .p-aboutText__title {
+    @extend .c-headingMain--large;
+    margin: 0 0 16px;
+    background: $tokei_base_color;
+  }
+  
+  .p-aboutText__title--brand {
+    @extend .p-aboutText__title;
+    background: $brand_base_color;
+  }
+  
+  .p-aboutText__title--jewelry {
+    @extend .p-aboutText__title;
+    background: $brand_base_color;
+  }
+  
+  .p-aboutText__title--gold {
+    @extend .p-aboutText__title;
+    background: $gold_base_color;
+    @include mq($md) {
+      text-align: left;
+    }
+  }
+  
+  .p-aboutText__title--backgroundBlack {
+    @extend .p-aboutText__title;
+    background: $tokei_base_color;
+    @include mq($md) {
+      background: $tokei_base_color;
+    }
+  }
+  
+  .p-aboutText__title--backgroundGold {
+    @extend .p-aboutText__title;
+    background: $gold_base_color;
+    @include mq($md) {
+      text-align: left;
+    }
+  }
+  
+  .p-aboutText__text {
+    padding: 0 8px;
+    font-size: 1.3rem;
+    @include mq($md) {
+      padding: 0;
+      font-size: 1.4rem;
+    }
+  }

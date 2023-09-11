@@ -1,0 +1,45 @@
+.u-onlyPc,
+.u-onlyPC {
+  @include only_mq($md) {
+    display: none;
+  }
+}
+
+.u-onlySp,
+.u-onlySP {
+  @include mq($md) {
+    display: none;
+  }
+}
+
+@for $order from 1 through 10 {
+  .u-order#{$order} {
+    order: $order;
+  }
+
+  .u-order#{$order}Sp {
+    @include only_mq($md) {
+      order: $order;
+    }
+  }
+
+  .u-order#{$order}Pc {
+    @include mq($md) {
+      order: $order;
+    }
+  }
+}
+
+.u-inlineBlock {
+  display: inline-block;
+}
+.u-inlineBlockPc {
+  @include only_mq($md) {
+    display: inline-block;
+  }
+}
+.u-inlineBlockSp {
+  @include mq($md) {
+    display: inline-block;
+  }
+}
