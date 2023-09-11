@@ -10,9 +10,14 @@ desktop.ini
 !/public/wp-config.php
 !/public/wp-content
 /public/wp-content/*
-
 !/public/wp-content/themes
 /public/wp-content/themes/*
 !/public/wp-content/themes/WP_original
+
+# cssファイル 更新不要
+/public/wp-content/themes/WP_original/assets/css
+/public/wp-content/themes/WP_original/assets/css/common.css.map
+/public/wp-content/themes/WP_original/assets/css/common.min.css.map
+
 # Gulpモジュール 更新不要
 /public/wp-content/themes/WP_original/node_modules
