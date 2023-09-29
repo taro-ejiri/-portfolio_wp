@@ -1,0 +1,14 @@
+.p-about {
+  max-width: 100%;
+  margin: 0 16px;
+  @include mq($md) {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  a {
+    color: #007bff;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

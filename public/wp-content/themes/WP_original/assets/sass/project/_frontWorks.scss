@@ -1,0 +1,75 @@
+.p-frontWorks {
+  width: 90%;
+  margin: 0 auto;
+  @include mq($md) {
+    max-width: 1170px;
+    margin: 100px auto 0;
+  }
+}
+
+.p-frontWorks_text {
+  color: #262423;
+  text-align: left;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.7;
+  @include mq($md) {
+    width: 80%;
+    margin: 20px auto 40px;
+  }
+}
+
+// sliderCSS上書き
+.p-front-slick {
+  width: 90%;
+  height: auto;
+  margin: 50px auto;
+  @include mq($md) {
+    width: 60%;
+    height: auto;
+    margin: 50px auto;
+  }
+  .slick-list {
+    height: auto;
+  }
+  .slick-slide {
+    margin: 0px 30px;
+    transition: all ease-in-out 0.3s;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .slick-prev {
+    left: -20px;
+    @include mq($md) {
+      left: -45px;
+    }
+  }
+  .slick-next {
+    right: -15px;
+    @include mq($md) {
+      right: -25px;
+    }
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    color: black;
+    font-size: 25px;
+    @include mq($md) {
+      font-size: 40px;
+    }
+  }
+  .slick-active {
+    opacity: 0.5;
+  }
+  .slick-current {
+    opacity: 1;
+  }
+  &.slick-dotted.slick-slider {
+    margin-bottom: 60px;
+  }
+  .slick-dots {
+    bottom: -45px;
+  }
+}

@@ -1,0 +1,44 @@
+.p-jumbotron {
+  background-image: url("../img/img_main_1.webp");
+  background-size: cover;
+  background-position: 75%;
+  margin-top: 100px;
+  padding: 30px 10px;
+  @include mq($md) {
+    background-position: center 20%;
+    margin-top: 200px;
+    padding: 50px;
+  }
+  .slick-list {
+    height: auto;
+  }
+}
+
+.p-jumbotron__slides {
+  margin: 0 auto;
+  max-width: 95%;
+  color: $white;
+  @include mq($md) {
+  max-width: 66.6%;
+  }
+}
+
+.p-jumbotron__blockquote {
+  padding: 0;
+  @include mq($lg) {
+    padding: 50px;
+  }
+}
+
+.p-jumbotron__title {
+  font-size: 2.5rem;
+  line-height: 200%;
+  text-align: center;
+  @include mq($md) {
+    font-size: 4rem;
+  }
+}
+
+.p-jumbotron__text {
+  line-height: 200%;
+}

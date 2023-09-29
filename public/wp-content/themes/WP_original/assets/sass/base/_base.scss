@@ -1,13 +1,12 @@
 @import "_reset.scss";
 
-/*--------------------------------------------------------------
-2.0 base
-----------------------------------------------------------------*/
+
 @font-face {
   // さわらびゴシック
   font-family: "Sawarabi";
   src: url("../font/SawarabiGothic-Regular.ttf");
 }
+
 body {
   font-family: "Sawarabi", sans-serif;
   &::after {
@@ -30,8 +29,6 @@ body {
   }
 }
 
-/* 2.1 Links
-------------------------------*/
 a {
   text-decoration: none;
 }
@@ -40,25 +37,6 @@ a {
   text-align: center;
 }
 
-.col_3 {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.col_3 > div {
-  width: 33.33333%;
-}
-
-@media screen and (max-width: 960px) {
-  .col_3 > div {
-    width: 100%;
-  }
-}
-
-/*--------------------------------------------------------------
-8.0 Elements 要素
---------------------------------------------------------------*/
 /*------------------------------
 8.1 Back to top button (vue.js)
 ------------------------------*/

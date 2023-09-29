@@ -1,0 +1,65 @@
+.p-singleWorksHead {
+  text-align: center;
+  padding: 120px 0px 0px;
+  @include mq($md) {
+    padding: 200px 80px 20px;
+  }
+}
+
+.p-singleWorksHead--p {
+  line-height: 1.6;
+  font-family: "Spinnaker", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  margin: 0;
+  a {
+    color: $gray-600;
+    text-decoration: none;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+.p-singleWorksHead__title {
+  @extend .p-singleWorksHead--p;
+  font-size: 1.6rem;
+  padding-bottom: 8px;
+  @include mq($md) {
+    padding-bottom: 16px;
+  }
+}
+
+.p-singleWorksHead__siteName {
+  font-size: 2.4rem;
+  font-weight: 200;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  padding-bottom: 12px;
+  @include mq($md) {
+    line-height: 1.6;
+    padding-bottom: 16px;
+  }
+}
+
+.p-singleWorksHead__client {
+  @extend .p-singleWorksHead--p;
+  font-size: 1.8rem;
+  color: $gray-600;
+  padding-bottom: 8px;
+  @include mq($md) {
+    line-height: 1.6;
+    padding-bottom: 12px;
+  }
+}
+
+.p-singleWorksHead__en {
+  @extend .p-singleWorksHead--p;
+  word-break: break-all;
+  font-size: 1.3rem;
+  padding-bottom: 8px;
+  @include mq($md) {
+    line-height: 1.6;
+    padding-bottom: 0;
+  }
+}
