@@ -20,21 +20,15 @@
 </footer>
 
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/assets/js/jquery-3.6.4.min.js"></script>
-
 <!-- slick -->
-<?php if (is_front_page() || is_post_type_archive('works') || is_singular('works')) : ?>
-  <script src="<?php bloginfo('template_url'); ?>/assets/js/slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
-<?php endif; ?>
-
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/assets/js/slick/slick.min.js"></script>
 <!-- ShareButton -->
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/assets/js/jquery.easy-rollover.min.js"></script>
-
 <!-- works sort -->
 <?php if (is_post_type_archive('works')) : ?>
   <script src="<?php bloginfo('template_url'); ?>/assets/js/works/masonry.pkgd.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/assets/js/works/extention.js"></script>
 <?php endif; ?>
-
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/assets/js/script.js"></script>
 <?php wp_footer(); ?>
 </body>
