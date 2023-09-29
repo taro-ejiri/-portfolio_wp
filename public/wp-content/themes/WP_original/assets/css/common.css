@@ -1085,6 +1085,19 @@ header .header-content {
   }
 }
 
+.l-header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.l-header__content {
+  margin: 0 auto;
+  padding: 60px 10%;
+  width: 100%;
+  transition: padding 0.3s;
+}
+
 .l-header__nav {
   position: relative;
 }
@@ -1297,70 +1310,16 @@ header .header-content {
   }
 }
 
-.pageTop {
-  position: fixed;
-  z-index: 10;
-  right: 20px;
-  bottom: 20px;
-  width: 55px;
-  height: auto;
-}
-.pageTop a {
-  display: block;
-  opacity: 0.9;
-  background: #a9a9b1;
-  text-align: center;
-  font-size: 10px;
-  letter-spacing: 0.1em;
-  color: #fff;
-  padding: 25px 0 10px;
-  transition: all 0.3s ease-in-out;
-}
-.pageTop a:hover {
-  opacity: 0.6;
-}
-.pageTop span {
-  display: block;
-  border-right: solid 2px #ffffff;
-  border-top: solid 2px #ffffff;
-  left: calc(50% - 4px);
-  position: absolute;
-  top: 8px;
-  transform: rotate(-45deg) translateX(-50%);
-  width: 13px;
-  height: 13px;
-}
-
-footer {
+.l-footer {
   margin-top: auto;
 }
-footer .f_share_btn {
-  margin-top: 50px;
-  text-align: center;
-}
-footer .f_share_btn ul {
-  padding-left: 0;
-  margin-bottom: 14px;
-}
-footer .f_share_btn li {
-  display: inline-block;
-  padding: 0 15px;
-}
-footer .cp_right {
+
+.l-footer__copyWriter {
   text-align: center;
   font-family: "Open Sans";
   font-size: 14px;
   color: #000;
   text-transform: uppercase;
-}
-
-@media screen and (max-width: 320px) {
-  footer .f_share_btn li {
-    padding: 0 10px;
-  }
-}
-.l-footer {
-  margin-top: auto;
 }
 
 .l-page {
@@ -1543,6 +1502,59 @@ footer .cp_right {
   color: #fff;
   border-color: #b3b5b5;
   text-decoration: none;
+}
+
+.c-pageTopBtn {
+  position: fixed;
+  z-index: 10;
+  right: 20px;
+  bottom: 20px;
+  width: 55px;
+  height: auto;
+}
+.c-pageTopBtn a {
+  display: block;
+  opacity: 0.9;
+  background: #a9a9b1;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: #fff;
+  padding: 25px 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+.c-pageTopBtn a:hover {
+  opacity: 0.6;
+}
+
+.c-pageTopBtn--arrow {
+  display: block;
+  border-right: solid 2px #ffffff;
+  border-top: solid 2px #ffffff;
+  left: calc(50% - 4px);
+  position: absolute;
+  top: 8px;
+  transform: rotate(-45deg) translateX(-50%);
+  width: 13px;
+  height: 13px;
+}
+
+.c-shareBtn {
+  margin-top: 50px;
+  text-align: center;
+}
+.c-shareBtn ul {
+  padding-left: 0;
+  margin-bottom: 14px;
+}
+.c-shareBtn li {
+  display: inline-block;
+  padding: 0 10px;
+}
+@media screen and (min-width: 768px) {
+  .c-shareBtn li {
+    padding: 0 15px;
+  }
 }
 
 .c-priceTable, .c-priceTable--general {

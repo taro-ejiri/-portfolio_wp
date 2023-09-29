@@ -39,7 +39,7 @@ $(function() {
   $('img').easyRollover();
 
   // Back to topButton
-	var pageTopBtn = $('.pageTop');
+	var pageTopBtn = $('.c-pageTopBtn');
 	pageTopBtn.hide();
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 150) {
