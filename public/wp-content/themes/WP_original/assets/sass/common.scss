@@ -1,65 +1,45 @@
+@charset "UTF-8";
 /* fondation */
 @import "foundation/variables";
 @import "foundation/mixin";
 @import "foundation/normalize";
 @import "foundation/generalReset";
 // @import "foundation/typograph";
-@import "foundation/swiper";
+@import "foundation/reset";
+@import "foundation/base";
 
 /* layout */
 @import "layout/wrapper";
-@import "layout/container";
 @import "layout/header";
-@import "layout/main";
-@import "layout/content";
-@import "layout/sidebar";
 @import "layout/footer";
-
 @import "layout/page";
-// @import "layout/front";
-// @import "layout/about";
-@import "layout/contact";
-@import "layout/archive";
-@import "layout/single";
 
 /* component */
-@import "component/section";
 @import "component/heading";
 @import "component/button";
-@import "component/table";
+// @import "component/section";
+// @import "component/table";
 
 /* project */
-
 // front-page parts
-@import "project/jumbotron";
-@import "project/principle";
-@import "project/frontWorks";
-
+@import "project/front/jumbotron";
+@import "project/front/principle";
+@import "project/front/frontWorks";
 // archive-works parts
 @import "project/archiveWorks";
-
 // single-works parts
-@import "project/singleWorksHead";
-@import "project/singleWorksContent";
-@import "project/singleWorksComment";
-
+@import "project/single/singleWorksHead";
+@import "project/single/singleWorksContent";
+@import "project/single/singleWorksComment";
 // about page
-@import "project/about";
-@import "project/biography";
-@import "project/prlicy";
-@import "project/smartphone";
-
+@import "project/about/about";
+@import "project/about/biography";
+@import "project/about/prlicy";
+@import "project/about/smartphone";
 // contact page
 @import "project/contact";
-
 // 404 error page
 @import "project/error";
-
-// トップ用パーツ
-// @import "project/top/topCatchBlock";
-
-// サイドバー用パーツ
-// @import "project/sidebar/sideAboutNav";
 
 /* utility */
 @import "utility/color";
