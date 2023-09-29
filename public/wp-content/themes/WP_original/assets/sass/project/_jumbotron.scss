@@ -6,8 +6,11 @@
   padding: 30px 10px;
   @include mq($md) {
     background-position: center 20%;
-    margin-top: 200px;
+    margin-top: 100px;
     padding: 50px;
+  }
+  @include mq($lg) {
+    margin-top: 200px;
   }
   .slick-list {
     height: auto;

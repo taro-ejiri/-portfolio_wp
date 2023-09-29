@@ -64,8 +64,8 @@
 </head>
 <body <?php body_class(); ?> class="fadeout">
   <header class="l-header" id="header">
-    <div class="header-content">
-      <h1 class="">
+    <div class="l-header__content">
+      <h1>
         <a href="<?php bloginfo('url'); ?>/">
           <picture>
             <source srcset="<?php bloginfo('template_url'); ?>/assets/img/logo.png" media="(min-width: 768px)">
