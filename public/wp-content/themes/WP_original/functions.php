@@ -329,5 +329,23 @@ function custom_wp_dequeue_css()
 }
 add_action('wp_enqueue_scripts', 'custom_wp_dequeue_css', 100);
 
+/**
+ * Contact Form 7 お問い合わせフォーム「海外スパム対策」
+ * メールフォームの textarea にひらがなが無ければ送信できないようにする
+**/
+add_filter('wpcf7_validate_textarea', 'wpcf7_validation_textarea_hiragana', 10, 2);
+add_filter('wpcf7_validate_textarea*', 'wpcf7_validation_textarea_hiragana', 10, 2);
+
+function wpcf7_validation_textarea_hiragana($result, $tag)
+{
+  $name = $tag['name'];
+  $value = (isset($_POST[$name])) ? (string) $_POST[$name] : '';
+  if ($value !== '' && !preg_match('/[ぁ-ん]/u', $value)) {
+      $result['valid'] = false;
+      $result['reason'] = array($name => 'この内容は送信できません。(Japanese text only)');
+  }
+  return $result;
+}
+
   //ここまで
 ; ?>
