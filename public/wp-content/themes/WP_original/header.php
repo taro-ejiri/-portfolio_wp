@@ -28,9 +28,7 @@
   <link rel="icon" type="image/x-icon" href="<?php bloginfo('template_url'); ?>/assets/img/favicon.ico">
   <!-- font-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <!-- style.css-->
-  <!-- <link href="<?php bloginfo('template_url'); ?>/assets/css/style.min.css" rel="stylesheet" type="text/css"> -->
-
+  <!-- common.css-->
   <link href="<?php bloginfo('template_url'); ?>/assets/css/common.min.css" rel="stylesheet" type="text/css">
   <!-- slick.css -->
   <?php if (is_front_page() || is_singular('works')) : ?>
