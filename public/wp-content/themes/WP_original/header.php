@@ -37,7 +37,7 @@
   <?php endif; ?>
 
   <!--[if lt IE 9]>
-<script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/html5shiv.min.js"></script>
+<script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/lib/html5shiv.min.js"></script>
 <![endif]-->
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96611275-1"></script>

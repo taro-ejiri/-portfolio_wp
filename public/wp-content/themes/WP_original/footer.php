@@ -18,11 +18,11 @@
     <!-- <div class="cp_right">※一時的にSNSボタンのリンクを取り消してます</div> -->
     <div class="l-footer__copyWriter">©2017-2023 ET WEB DESIGN</div>
   </footer>
-  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/assets/js/jquery-3.6.4.min.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/assets/js/lib/jquery-3.6.4.min.js"></script>
   <!-- slick -->
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/assets/js/slick/slick.min.js"></script>
   <!-- ShareButton -->
-  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/assets/js/jquery.easy-rollover.min.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/assets/js/lib/jquery.easy-rollover.min.js"></script>
   <!-- works sort -->
   <?php if (is_post_type_archive('works')) : ?>
     <script src="<?php bloginfo('template_url'); ?>/assets/js/works/masonry.pkgd.min.js"></script>
